@@ -1,0 +1,26 @@
+{
+  "name": "05-linked-lists",
+  "version": "1.0.0",
+  "description": "![cf](http://i.imgur.com/7v5ASc8.png) lab 10 - Singly Linked List Data Structure ====",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmurphy90/05-linked-lists.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmurphy90/05-linked-lists/issues"
+  },
+  "homepage": "https://github.com/dmurphy90/05-linked-lists#readme",
+  "dependencies": {
+    "jest": "^22.1.4"
+  }
+}
