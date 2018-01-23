@@ -8,7 +8,8 @@ class SLL {
     this.length = 0;
   }
 
-  insertHead(val) {
+  //Big O is a value of N, it's placed directly in front without iterating
+  insertHead(val) {  
     let nd = new Nd(val);
 
     nd.next = this.head;
@@ -17,6 +18,7 @@ class SLL {
     return this;
   }
 
+  //Big O is either O(1) if the list is only one Node, or O(n) if it has to iterate through the entire list
   insertEnd(val) {
     let nd = new Nd(val);
 
@@ -32,6 +34,7 @@ class SLL {
     return this;
   }
 
+  //Big O is O(n) since it has to iterate through the entire list to reverse it, it will never be O(1) since you can't really reverse a single node.
   reverse() {
     let node = this.head;
     let previous = null;
@@ -45,6 +48,7 @@ class SLL {
     return previous;
   }
 
+  //Big O is O(n) since it has to iterate through the entire list to find the node to delete.
   remove(offset) {
     if (!offset) return null;
     if (offset === 1) {
